@@ -1,0 +1,11 @@
+
+Перенести все таблицы из своей схемы с сервера постгрес на сервер ClickHouse используя таблицы на движке PostgreSQL. 
+
+Источник: сервер PostgreSQL 158.160.168.5
+
+Назначение: сервер Clickhouse 51.250.39.102 БД olap. Таблица должна начинать называться с логина студента, например denisov__dic_client или denisov__dic_client__pg
+
+Пренос данных осуществлять путем подключения Airflow к ClickHouse через таблицы PostgreSQL (ENGINE = PostgreSQL).
+
+Пример таблицы назначения - default.example_dic_client
+Пример таблицы PostgreSQL - default.example_pg_dic_client
